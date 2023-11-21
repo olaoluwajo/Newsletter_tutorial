@@ -4,7 +4,6 @@
   :root {
     /* fonts */
     --roboto: "Roboto", sans-serif;
-    
 
     /* colors */
     --darkSlateGrey: hsl(234, 29%, 20%);
@@ -14,7 +13,112 @@
     --tomato: hsl(4, 100%, 67%);
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--roboto);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--darkSlateGrey);
+}
+
+main {
+    background-color: var(--charcoalGrey);
+    height: 100vh;
+}
+
+.container {
+   
+    height: 97vh;
+    display: flex;
+    
+}
+
+.information {
+    width: 750px;
+    height: 500px;
+    margin:  auto;
+    background-color: var(--white);
+    border-radius: 30px;
+    
+}
+
+.image_desktop{
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    /* border: 2px solid black; */
+    float: right;
+    padding-left: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.info_product{
+    width: 50%;
+    padding: 4rem 1rem 1rem 1rem; 
+    margin-left: 30px;
+    height: 100%;
+    position: relative;
+    font-size: .8rem;
+
+}
+p.list{
+    margin-top: .5rem;
+    display: flex;
+    font-size: 14px;
+    /* border: 2px solid black; */
+    
+}
+
+.img_tick_list{
+    padding-right: 10px;
+    width: 25px;
+    }
+
+h1 {
+    font-size: 2.5rem;
+}
+
+
+.content_field{
+    margin-top: 2rem;
+    height: 150px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin-top: .5rem;
+    height: 40px;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 13px;
+
+}
+
+button {
+    margin-top: .5rem;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--charcoalGrey);
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
 
 #success_message {
-  display: none;
+    display: none;
+
 }
